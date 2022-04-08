@@ -1,7 +1,13 @@
-public class FrameAccueil
-{
-    public static void main(String[] args)
-    {
+import javax.swing.*;
 
+public class FrameAccueil extends JFrame
+{
+    public FrameAccueil()
+    {
+        this.setTitle("Acceuil");
+        this.setLocation(50,50);
+
+        this.pack();
+        this.setVisible(true);
     }
 }
