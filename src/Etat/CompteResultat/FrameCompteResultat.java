@@ -1,4 +1,4 @@
-package Adefinir.CompteResultat;
+package Etat.CompteResultat;
 
 public class FrameCompteResultat
 {

@@ -1,4 +1,4 @@
-package Adefinir.BilanAnnuel;
+package Etat.BilanAnnuel;
 
 public class FrameBilanAnnuel
 {
