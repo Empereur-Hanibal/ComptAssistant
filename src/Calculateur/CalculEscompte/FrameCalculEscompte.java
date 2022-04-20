@@ -29,8 +29,6 @@ public class FrameCalculEscompte extends JFrame
         this.add(this.panelCalculFinal);
         this.add(this.panelBtnCalcul);
 
-        this.setVisible(true);
+        this.setVisible(false);
     }
-
-    public static void main(String[] args) {new FrameCalculEscompte();}
 }

@@ -15,8 +15,8 @@ public class PanelCalculInitTva extends JPanel
     public PanelCalculInitTva()
     {
         //Création des composants
-        PanelCalculInitTva.txtPrixInit = new JTextField("     ");
-        PanelCalculInitTva.txtTauxTva  = new JTextField("     ");
+        PanelCalculInitTva.txtPrixInit = new JTextField("        ");
+        PanelCalculInitTva.txtTauxTva  = new JTextField("        ");
 
         this.lblPrixInit = new JLabel("Prix initial : ", JLabel.RIGHT);
         this.lblTauxtva  = new JLabel("Taux de TVA : ", JLabel.RIGHT );

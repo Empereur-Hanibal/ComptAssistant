@@ -36,9 +36,9 @@ public class PanelCalculFinalEscompte extends JPanel
         this.panelCalculFinal.add(PanelCalculFinalEscompte.lblPrixEscompteR);
 
         this.panelCalculFinal.add(this.lblPrixTva);
-        this.panelCalculFinal.add(PanelCalculFinalEscompte.lblPrixFinalR);
+        this.panelCalculFinal.add(PanelCalculFinalEscompte.lblTvaR);
 
         this.panelCalculFinal.add(this.lblprixFinal);
-        this.panelCalculFinal.add(PanelCalculFinalEscompte.lblTvaR);
+        this.panelCalculFinal.add(PanelCalculFinalEscompte.lblPrixFinalR);
     }
 }

@@ -1,6 +1,9 @@
 package Calculateur.CalculTva;
 
+import Calculateur.FrameCalculateur;
+
 import javax.swing.*;
+import java.awt.*;
 
 public class PanelTitreTva extends JPanel
 {
@@ -19,6 +22,6 @@ public class PanelTitreTva extends JPanel
         this.add(this.panelTitre);
 
         //Elaboration des composants
-        this.panelTitre.add(this.lblTitre);
+        this.panelTitre.add(this.lblTitre );
     }
 }

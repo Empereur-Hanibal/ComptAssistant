@@ -13,7 +13,7 @@ public class FrameCalculTva extends JFrame
     public FrameCalculTva()
     {
         this.setTitle("Calcul Tva");
-        this.setSize(400,300);
+        this.setSize(500,400);
         this.setLocation(10,10);
         this.setLayout(new GridLayout(4,1));
 
@@ -29,8 +29,6 @@ public class FrameCalculTva extends JFrame
         this.add(this.panelCalculFinal);
         this.add(this.panelBtnCalcul);
 
-        this.setVisible(true);
+        this.setVisible(false);
     }
-
-    public static void main(String[] args) {new FrameCalculTva();}
 }
