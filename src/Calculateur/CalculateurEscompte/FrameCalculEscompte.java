@@ -1,4 +1,4 @@
-package Calculateur.CalculEscompte;
+package Calculateur.CalculateurEscompte;
 
 import javax.swing.*;
 import java.awt.*;

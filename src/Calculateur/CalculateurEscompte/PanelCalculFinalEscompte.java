@@ -1,4 +1,4 @@
-package Calculateur.CalculEscompte;
+package Calculateur.CalculateurEscompte;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,8 +13,6 @@ public class PanelCalculFinalEscompte extends JPanel
     public static JLabel lblTvaR;
     public static JLabel lblPrixFinalR;
 
-    private JPanel panelCalculFinal;
-
     public PanelCalculFinalEscompte()
     {
         //Création des composants
@@ -26,19 +24,14 @@ public class PanelCalculFinalEscompte extends JPanel
         PanelCalculFinalEscompte.lblPrixEscompteR = new JLabel();
         PanelCalculFinalEscompte.lblTvaR          = new JLabel();
 
-        this.panelCalculFinal = new JPanel();
-
         //Positionnement des composants
-        this.add(this.panelCalculFinal);
+        this.add(this.lblPrixEscompte);
+        this.add(PanelCalculFinalEscompte.lblPrixEscompteR);
 
-        //Elaboration du panel Calcul Final
-        this.panelCalculFinal.add(this.lblPrixEscompte);
-        this.panelCalculFinal.add(PanelCalculFinalEscompte.lblPrixEscompteR);
+        this.add(this.lblPrixTva);
+        this.add(PanelCalculFinalEscompte.lblTvaR);
 
-        this.panelCalculFinal.add(this.lblPrixTva);
-        this.panelCalculFinal.add(PanelCalculFinalEscompte.lblTvaR);
-
-        this.panelCalculFinal.add(this.lblprixFinal);
-        this.panelCalculFinal.add(PanelCalculFinalEscompte.lblPrixFinalR);
+        this.add(this.lblprixFinal);
+        this.add(PanelCalculFinalEscompte.lblPrixFinalR);
     }
 }

@@ -1,9 +1,8 @@
-package Calculateur.CalculEscompte;
+package Calculateur.CalculateurEscompte;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DecimalFormat;
 
 public class PanelBtnCalculEscompte extends JPanel implements ActionListener
 {

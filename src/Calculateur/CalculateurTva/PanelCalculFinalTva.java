@@ -1,6 +1,4 @@
-package Calculateur.CalculTva;
-
-import Calculateur.CalculEscompte.PanelCalculFinalEscompte;
+package Calculateur.CalculateurTva;
 
 import javax.swing.*;
 
@@ -12,8 +10,6 @@ public class PanelCalculFinalTva extends JPanel
     public static JLabel lblPrixTvaR;
     public static JLabel lblPrixFinalR;
 
-    public JPanel panelCalculFinal;
-
     public PanelCalculFinalTva()
     {
         //Création des composants
@@ -23,16 +19,11 @@ public class PanelCalculFinalTva extends JPanel
         PanelCalculFinalTva.lblPrixFinalR = new JLabel();
         PanelCalculFinalTva.lblPrixTvaR   = new JLabel();
 
-        this.panelCalculFinal = new JPanel();
-
         //Positionnement des composants
-        this.add(this.panelCalculFinal);
+        this.add(this.lblprixFinal);
+        this.add(PanelCalculFinalTva.lblPrixFinalR);
 
-        //Elaboration des composants
-        this.panelCalculFinal.add(this.lblprixFinal);
-        this.panelCalculFinal.add(PanelCalculFinalTva.lblPrixFinalR);
-
-        this.panelCalculFinal.add(this.lblPrixTva  );
-        this.panelCalculFinal.add(PanelCalculFinalTva.lblPrixTvaR);
+        this.add(this.lblPrixTva  );
+        this.add(PanelCalculFinalTva.lblPrixTvaR);
     }
 }

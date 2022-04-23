@@ -1,4 +1,4 @@
-package Calculateur.CalculTva;
+package Calculateur.CalculateurTva;
 
 import javax.swing.*;
 import java.awt.*;

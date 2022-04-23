@@ -1,4 +1,4 @@
-package Calculateur.CalculEscompte;
+package Calculateur.CalculateurEscompte;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,8 +11,6 @@ public class PanelCalculInitEscompte extends JPanel
     private JLabel lblPrixInit;
     private JLabel lblTauxEscompte;
 
-    private JPanel panelCalculInit;
-
     public PanelCalculInitEscompte()
     {
         //Création des composants
@@ -22,16 +20,11 @@ public class PanelCalculInitEscompte extends JPanel
         this.lblPrixInit     = new JLabel("prix initial : ", Label.RIGHT   );
         this.lblTauxEscompte = new JLabel("taux d'escompte : ",Label.RIGHT );
 
-        this.panelCalculInit = new JPanel();
-
         //Positionnement des composants
-        this.add(this.panelCalculInit );
+        this.add(this.lblPrixInit);
+        this.add(PanelCalculInitEscompte.txtPrixInit);
 
-        //Elaboration du panel Calcul Initial
-        this.panelCalculInit.add(this.lblPrixInit);
-        this.panelCalculInit.add(PanelCalculInitEscompte.txtPrixInit);
-
-        this.panelCalculInit.add(this.lblTauxEscompte);
-        this.panelCalculInit.add(PanelCalculInitEscompte.txtTauxEscompte);
+        this.add(this.lblTauxEscompte);
+        this.add(PanelCalculInitEscompte.txtTauxEscompte);
     }
 }
