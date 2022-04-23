@@ -1,4 +1,4 @@
-package Calculateur.CalculTva;
+package Calculateur.CalculateurTva;
 
 import javax.swing.*;
 
@@ -10,8 +10,6 @@ public class PanelCalculInitTva extends JPanel
     private JLabel lblPrixInit;
     private JLabel lblTauxtva;
 
-    private JPanel panelCalculInit;
-
     public PanelCalculInitTva()
     {
         //Création des composants
@@ -21,16 +19,11 @@ public class PanelCalculInitTva extends JPanel
         this.lblPrixInit = new JLabel("Prix initial : ", JLabel.RIGHT);
         this.lblTauxtva  = new JLabel("Taux de TVA : ", JLabel.RIGHT );
 
-        this.panelCalculInit = new JPanel();
-
         //Positionnement des composants
-        this.add(this.panelCalculInit);
+        this.add(this.lblPrixInit);
+        this.add(PanelCalculInitTva.txtPrixInit);
 
-        //Elaboration des composants
-        this.panelCalculInit.add(this.lblPrixInit);
-        this.panelCalculInit.add(PanelCalculInitTva.txtPrixInit);
-
-        this.panelCalculInit.add(this.lblTauxtva);
-        this.panelCalculInit.add(PanelCalculInitTva.txtTauxTva);
+        this.add(this.lblTauxtva);
+        this.add(PanelCalculInitTva.txtTauxTva);
     }
 }

@@ -1,7 +1,7 @@
 package Calculateur;
 
-import Calculateur.CalculTva.FrameCalculTva;
-import Calculateur.CalculEscompte.FrameCalculEscompte;
+import Calculateur.CalculateurTva.FrameCalculTva;
+import Calculateur.CalculateurEscompte.FrameCalculEscompte;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -16,7 +16,6 @@ public class PanelBtnCalculateur extends JPanel implements ActionListener
 
     private FrameCalculTva frameCalculTva;
     private FrameCalculEscompte frameCalculEscompte;
-    private FrameCalculateur frameCalculateur;
 
     PanelBtnCalculateur()
     {
@@ -28,7 +27,6 @@ public class PanelBtnCalculateur extends JPanel implements ActionListener
 
         this.frameCalculEscompte = new FrameCalculEscompte();
         this.frameCalculTva      = new FrameCalculTva();
-        this.frameCalculateur    = new FrameCalculateur();
 
         //Positionnement des composants
         this.add(this.panelCalculateur);

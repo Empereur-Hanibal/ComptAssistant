@@ -1,6 +1,4 @@
-package Calculateur.CalculTva;
-
-import Calculateur.CalculEscompte.PanelCalculFinalEscompte;
+package Calculateur.CalculateurTva;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -10,20 +8,13 @@ public class PanelBtnCalculTva extends JPanel implements ActionListener
 {
     private JButton btnCalcul;
 
-    private JPanel panelBtnCalcul;
-
     public PanelBtnCalculTva()
     {
         //Création des composants
         this.btnCalcul = new JButton("Calculer");
 
-        this.panelBtnCalcul = new JPanel();
-
         //Positionnement des composants
-        this.add(this.panelBtnCalcul);
-
-        //Elaboration des composants
-        this.panelBtnCalcul.add(this.btnCalcul);
+        this.add(this.btnCalcul);
 
         //Activation des controles
         this.btnCalcul.addActionListener(this);
